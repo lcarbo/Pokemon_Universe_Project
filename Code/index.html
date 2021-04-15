@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>PokeMon3y$$$</title>
+  <!-- Boostrap Stylesheet -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" media="screen">
+</head>
+
+
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+    <!-- NAVBAR CODE (from Bootstrap)--> 
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light"> -->
+    <a class="navbar-brand" href="index.html">Dashboard Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Poke Fun!
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="matchup.html">Head-to-Head Matchup</a>
+            <a class="dropdown-item" href="type.html">Type Effectiveness</a>
+            <a class="dropdown-item" href="universe.html">Universe Page</a>
+          </div>
+        <!-- </li>
+        <li class="nav-item">
+            <a class="nav-link" href="index.html">Dashboard Home</a>
+          </li> -->
+      </ul>
+    </div>
+  </nav>
+
+    <section id="about">
+        <div class="p-3 mb-2 bg-warning text-dark">
+        <center><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1200px-International_Pok%C3%A9mon_logo.svg.png" height="180" alt="" class="center">
+        <div class="content"></center>
+        </br>
+          <center><h1>Welcome to our Pokemon Dashboard!</h1></center>
+         <center> <p> We are a team of developers excited to share the world of Pokemon! </p> </center>
+         <center> <p> Our story begins in 1995, when the franchise called Pokemon, formerly known as "Pocket Monsters", started in Japan. 
+             Pokemon are small creatures you can catch and train to fight each other in the Pokemon Universe. 
+             For those who are still confused, think of a wrestling match! Trainers work with fighters who then wrestle to win. 
+             As you toggle through the website pages, you will learn all about the individual strengths about each Pokemon, to help you 
+             make an informed decision as a new player. </p> </center>
+            <center> <p> </p></cener> We want you to be as excited about Pokemon as we are, and are eager to share our knowledge of the Pokemon Universe!
+         </p></center>
+         <center><img src="https://static2.srcdn.com/wordpress/wp-content/uploads/2021/01/Pokemon-How-Many.jpg" height="180" alt="" class="center">
+            <div class="content"></center>
+              <div id="pokemon">
+                <br>
+              <center><h5>Who's That Pokemon!?</h5></center>
+                <br>
+                <center><select id="selTypeset" onchange="typeChanged(this.value)"></select> </center>
+                <br>
+                <center><p data-role="listview" data-inset="true" id="pokeDetails"></p> </center>
+                <br> 
+                <center><p class = "text-warning">Warning!!!</p></center>
+              </div>
+         </div>
+        </div>
+
+      </section>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="rand_poke.js"></script>
+
+
+</body>
+
+</html>
