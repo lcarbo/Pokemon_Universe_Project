@@ -35,6 +35,7 @@ function gatherData(){
         var hp1 = data[i].HP;
         var spatk1 = data[i].SpAtk;
         var spdef1 = data[i].SpDef;
+        var speed = data[i].Speed;
       }
       if(data[i].Name == name2){
         // get all of the values for that pokemon
@@ -43,6 +44,7 @@ function gatherData(){
         var hp2 = data[i].HP;
         var spatk2 = data[i].SpAtk;
         var spdef2 = data[i].SpDef;
+        var speed2 = data[i].Speed;
       }
     }
     // add the data to a list of dictionaries 
@@ -51,14 +53,16 @@ function gatherData(){
       {x: "Attack", value: attack1},
       {x: "Defense", value: defense1},
       {x: "Special Attack", value: spatk1},
-      {x: "Special Defense", value: spdef1}
+      {x: "Special Defense", value: spdef1},
+      {x: "Speed", value:speed}
     ]; 
     var data2 = [
       {x: "HP", value: hp2},
       {x: "Attack", value: attack2},
       {x: "Defense", value: defense2},
       {x: "Special Attack", value: spatk2},
-      {x: "Special Defense", value: spdef2}
+      {x: "Special Defense", value: spdef2},
+      {x: "Speed", value:speed2}
     ];
     var dataSet = [data1, data2];
         // let data = gatherData();
