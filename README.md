@@ -1,5 +1,5 @@
 # project_poke
-When learning about the Pokemon Universe, it's neccessary to understand that these creatures enjoy companionship and competition. They are organized in to several generations, and type categories that impact how they interact with one another.
+When learning about the Pokemon Universe, it's neccessary to understand that these creatures enjoy companionship and competition. They are organized in to multiple generations and type categories that impact how they interact with one another.
 
 For this project, we used the PokeAPI and a csv of Pokemon stats to build out a dashboard visualizing the composition of the Pokemon universe and how individual Pokemon may compare/interact with one another based on their basic stats and types.
 
